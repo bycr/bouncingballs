@@ -15,13 +15,5 @@ mycolors = {
     8: (255, 0, 0), #"Rojo"
     9: (255, 170, 255) #"Rosa"
 }
-random_value = randrange(len(mycolors))
-contador = 0
 
-print(mycolors.get(1))
-
-for i in mycolors.values():
-    if contador == random_value:
-        print(i)
-    contador = contador +1
 
