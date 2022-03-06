@@ -1,6 +1,6 @@
 import random
 import threading
-import diccionaro
+import time
 from collections import namedtuple
 
 import pygame
@@ -51,9 +51,10 @@ def circulos(dibuja_circulo):
         random_value = random.randrange(len(mycolors))
         contador = 0
         for colo in mycolors.values():
-            if contador == random_value:
+            if contador == random_value and contador != 2:
                 print(colo)
                 pantalla.fill(colo)
+                #time.sleep(0.5)
             contador = contador + 1
         #pantalla.fill(color_fondo)
         for circulo in circulos:
